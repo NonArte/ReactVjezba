@@ -1,0 +1,351 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+::-moz-selection {
+	background-color: #ee0000;
+	color: #ffffff;
+}
+
+::selection {
+	background-color: #ee0000;
+	color: #ffffff;
+}
+
+html {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+}
+
+.banner {
+	background: #000000 url('../public/assets/sailboat.jpg') no-repeat center;
+	width: 100%;
+	height: 41.25rem;
+	background-size: cover;
+	position: relative;
+}
+
+.banner a {
+	position: absolute;
+	bottom: 0.93rem;
+	left: 0.93rem;
+	padding: 0.93rem;
+	text-transform: uppercase;
+
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1.87rem;
+}
+
+.banner a:hover {
+	background-color: #009688;
+}
+
+@media (max-width: 400px) {
+	.banner {
+		height: 18.75rem;
+	}
+	.banner a {
+		font-size: 1rem;
+	}
+}
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 10;
+	background-color: #ffffff;
+	color: #000000;
+	box-shadow: 0.12rem 0.12rem 0.75rem 0.12rem;
+	flex-direction: column;
+	display: none;
+}
+.dropdown:hover {
+	display: flex;
+}
+#dropdown {
+	padding: 0.5rem;
+}
+#dropdown button {
+	border: none;
+	color: #fff;
+	font-size: 0.95rem;
+	background-color: #000;
+}
+#dropdown button:hover {
+	background-color: lightgray;
+}
+.dropdown li {
+	padding: 0.6rem 4.4rem 0.6rem 0.6rem;
+}
+.dropdown li:hover {
+	background-color: #dddddd;
+}
+.dropdown li:last-child {
+	padding: 0.6rem 4.4rem 0.6rem 0.6rem;
+}
+
+.dropdown-active {
+	display: flex;
+}
+
+.backdrop {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 5;
+}
+
+header {
+	position: fixed;
+	z-index: 10;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+}
+header a {
+	text-decoration: none;
+}
+header ul {
+	display: flex;
+}
+header ul li {
+	list-style-type: none;
+	padding: 0.5rem 0;
+}
+header ul li:first-child a {
+	background-color: #009688;
+}
+header ul li:first-child a:hover {
+	background-color: lightgray;
+	color: black;
+}
+header ul li:last-child {
+	position: relative;
+	padding: 0;
+}
+header ul li:last-child:hover {
+	cursor: pointer;
+	color: black;
+	background-color: lightgray;
+}
+header ul li a {
+	color: white;
+	padding: 0.5rem 1rem;
+}
+header ul li a:hover {
+	color: black;
+	background-color: white;
+}
+header ul li p {
+	padding: 0.5rem 1rem;
+}
+
+.ourTeam {
+	padding: 3.1rem 0;
+	text-align: center;
+}
+.ourTeam h1 {
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 1.56rem;
+}
+.ourTeam p {
+	margin-bottom: 2.5rem;
+}
+
+.team {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 4.7rem;
+}
+
+.teamMember {
+	display: flex;
+	flex-direction: column;
+	padding: 0 1.56rem;
+}
+.teamMember h3 {
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+.teamMember img {
+	border-radius: 50%;
+	margin-bottom: 1.56rem;
+}
+.teamMember img:hover {
+	opacity: 0.6;
+}
+
+@media (max-width: 400px) {
+	.team {
+		flex-direction: column;
+	}
+}
+
+.mobileNav {
+	display: none;
+}
+
+header .search {
+	padding: 0.5rem 1rem;
+}
+
+header .search:hover {
+	background-color: #009688;
+	cursor: pointer;
+}
+
+@media (max-width: 400px) {
+	.desktopNav,
+	.search {
+		display: none;
+	}
+
+	.mobileNav {
+		background-color: black;
+		color: white;
+		position: fixed;
+		top: 0;
+		width: 100%;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.mobileNav p {
+		padding: 0.5rem 1rem;
+	}
+
+	.mobileMenu {
+		display: none;
+	}
+}
+.ourWork {
+	width: 100%;
+	background-color: black;
+	padding: 4rem 0.6rem;
+	display: flex;
+	gap: 0.6rem;
+}
+.text {
+	width: 25%;
+}
+
+.text h3 {
+	color: white;
+	text-align: left;
+	margin: 1rem 0;
+	font-size: 1.3rem;
+}
+.text p {
+	color: white;
+	text-align: left;
+	margin: 1rem 0;
+	font-size: 1.1rem;
+}
+.wrap {
+	border: 1px solid transparent;
+	background-color: white;
+	width: 25%;
+}
+.wrap h3,
+.wrap h4,
+.wrap p {
+	text-align: left;
+	margin: 0.5rem 0.2rem;
+}
+.price {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 4rem 0;
+}
+.plan {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 1rem;
+	margin: 4rem 1rem;
+}
+.plan ul {
+	list-style-type: none;
+	border: 1px solid #ccc;
+	width: 33.33%;
+}
+.plan ul:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.plan li {
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	border-bottom: 1px solid #ccc;
+}
+.plan li:first-child {
+	color: #ccc;
+	background-color: #000;
+}
+.plan li:last-child {
+	background-color: #f0f0f0f0;
+}
+.plan button {
+	border-style: none;
+	color: #fff;
+	background-color: #009688;
+	margin: 1rem 0;
+	padding: 0.75rem 1.5rem;
+}
+.plan button:hover {
+	color: #000;
+	background-color: #ccc;
+}
+.contact {
+	display: flex;
+	margin: 4rem 1rem;
+}
+.adress {
+	width: 42%;
+}
+.adress h2 {
+	border-bottom: 6px solid #009688;
+}
+.adress h2,
+.adress h3,
+.adress p {
+	margin: 1rem 0;
+	width: fit-content;
+}
+.form {
+	width: 58%;
+	border: 1px solid #ccc;
+	box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+.form div {
+	margin: 0.5rem;
+}
+.input input {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+
+.form button {
+	float: right;
+	color: #fff;
+	background-color: #000;
+	border: none;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	cursor: pointer;
+}
