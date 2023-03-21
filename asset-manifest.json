@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ReactVjezba/static/css/main.7151e080.css",
+    "main.js": "/ReactVjezba/static/js/main.7af95741.js",
+    "static/media/sailboat.jpg": "/ReactVjezba/static/media/sailboat.c766b76fb0102dcbe759.jpg",
+    "index.html": "/ReactVjezba/index.html",
+    "main.7151e080.css.map": "/ReactVjezba/static/css/main.7151e080.css.map",
+    "main.7af95741.js.map": "/ReactVjezba/static/js/main.7af95741.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7151e080.css",
+    "static/js/main.7af95741.js"
+  ]
+}
